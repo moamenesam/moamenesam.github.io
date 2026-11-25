@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moamen Essam | Data Analyst Intern Candidate</title>
+<meta name="description" content="Portfolio of Moamen Essam, a computer science student in Egypt focused on data analysis with SQL, Excel, Power BI and Power Query.">
+<meta property="og:title" content="Moamen Essam | Data Analyst Intern Candidate">
+<meta property="og:description" content="1,500 orders, one Power BI dashboard a manager can read in 30 seconds. SQL, Excel, Power BI, Power Query.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Moamen Essam, home"><span class="brand-mark">ME</span><span class="brand-name">Moamen Essam</span></a>
+  <nav aria-label="Main">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#path">Path</a>
+    <a class="btn btn-small" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <p class="eyebrow">Data analyst intern candidate · Minia, Egypt</p>
+  <h1>I turn messy sales data into <em>one page</em> a manager can read in 30 seconds.</h1>
+  <p class="lead">Computer science student (Software Engineering) working with SQL, Excel, Power BI and Power Query. Open to data analyst internships and ready to start now.</p>
+  <div class="cta">
+    <a class="btn" href="assets/Moamen_Essam_Data_Analyst_CV.pdf" download>Download CV</a>
+    <a class="btn btn-ghost" href="#dashboard">See my dashboard project</a>
+  </div>
+  <ul class="kpis" aria-label="Key numbers from the flagship dashboard">
+    <li><span class="kpi-num" data-count="66" data-suffix="M">66M</span><span class="kpi-label">total sales (66,180,650)</span></li>
+    <li><span class="kpi-num" data-count="1500" data-format="int">1,500</span><span class="kpi-label">orders analysed</span></li>
+    <li><span class="kpi-num" data-count="15903" data-format="int">15,903</span><span class="kpi-label">units sold</span></li>
+    <li><span class="kpi-num" data-count="10.3" data-suffix="%" data-dec="1">10.3%</span><span class="kpi-label">of leads became customers (72 of 697)</span></li>
+  </ul>
+</section>
+
+<section id="dashboard" class="section">
+  <div class="section-head">
+    <p class="eyebrow">Flagship project · 2026</p>
+    <h2>Sales Performance Dashboard</h2>
+    <p class="muted">Power BI, Power Query and DAX. Egypt and Saudi Arabia, fiscal year 2026 (1 Jan to 31 Dec), covering revenue, orders and the sales pipeline. Filters for category, order type and date. Actual sales are compared with the monthly plan.</p>
+  </div>
+
+  <figure class="shot">
+    <a href="assets/dashboard.png" target="_blank" rel="noopener"><img src="assets/dashboard.png" width="1164" height="653" alt="Power BI dashboard: total sales 66M, sales by country, product and channel, monthly actual vs plan, and an order funnel from lead to won"></a>
+    <figcaption>The dashboard as built in Power BI. Select the image to open it full size.</figcaption>
+  </figure>
+
+  <div class="qa-grid">
+    <article class="card" id="q1">
+      <p class="q">Question 1</p>
+      <h3>Which market carries revenue?</h3>
+      <div class="donut-wrap">
+        <svg class="donut" viewBox="0 0 120 120" role="img" aria-label="Egypt 58 percent, Saudi Arabia 42 percent of sales">
+          <circle class="donut-bg" cx="60" cy="60" r="48"/>
+          <circle class="donut-seg" cx="60" cy="60" r="48" style="stroke-dasharray:174.9 301.6"/>
+          <text x="60" y="58" text-anchor="middle" class="donut-big">58%</text>
+          <text x="60" y="74" text-anchor="middle" class="donut-small">Egypt</text>
+        </svg>
+        <ul class="legend">
+          <li><i class="dot dot-a"></i>Egypt <b>58%</b> · 38.5M</li>
+          <li><i class="dot dot-b"></i>Saudi Arabia <b>42%</b> · 27.7M</li>
+        </ul>
+      </div>
+      <p class="small">Egypt leads, but neither market can be ignored.</p>
+    </article>
+
+    <article class="card" id="q2">
+      <p class="q">Question 2</p>
+      <h3>Which channel sells most?</h3>
+      <div class="bars">
+        <div class="bar-row"><span>Distributor</span><b>34.7%</b><div class="track"><div class="fill" style="width:100%"></div></div></div>
+        <div class="bar-row"><span>Retail</span><b>34.5%</b><div class="track"><div class="fill" style="width:99.4%"></div></div></div>
+        <div class="bar-row"><span>Online</span><b>30.8%</b><div class="track"><div class="fill" style="width:88.8%"></div></div></div>
+      </div>
+      <p class="small">Bar lengths are scaled to the largest share. The three channels are close, so no single one carries the business.</p>
+    </article>
+
+    <article class="card wide" id="q3">
+      <p class="q">Question 3</p>
+      <h3>Where does the sales funnel leak?</h3>
+      <div class="bars">
+        <div class="bar-row"><span>Lead</span><b>697</b><div class="track"><div class="fill" style="width:100%"></div></div></div>
+        <div class="bar-row"><span>Qualified</span><b>390</b><div class="track"><div class="fill" style="width:55.95%"></div></div></div>
+        <div class="bar-row"><span>Proposal</span><b>223</b><div class="track"><div class="fill" style="width:32%"></div></div></div>
+        <div class="bar-row"><span>Negotiation</span><b>118</b><div class="track"><div class="fill" style="width:16.93%"></div></div></div>
+        <div class="bar-row"><span>Won</span><b>72</b><div class="track"><div class="fill" style="width:10.33%"></div></div></div>
+      </div>
+      <p><strong>Only 10% of leads become customers</strong> (72 of 697). The biggest loss by volume is Lead to Qualified (307 leads). The biggest loss by share is Proposal to Negotiation (47%).</p>
+    </article>
+  </div>
+
+  <h3 class="sub">Insight cards</h3>
+  <p class="muted">Five slides from the LinkedIn carousel for this project.</p>
+  <div class="cards-strip">
+    <img src="assets/insight-0.jpg" width="959" height="1198" loading="lazy" alt="Slide: sales by product, Laptop 32.9M is 50 percent of revenue, top 3 products are 86 percent of sales">
+    <img src="assets/insight-1.jpg" width="959" height="1198" loading="lazy" alt="Slide: total sales 66,180,650 from 15,903 units across 1,500 orders, average 44,120 per order, 5 sales reps">
+    <img src="assets/insight-2.jpg" width="959" height="1198" loading="lazy" alt="Slide: Egypt 58 percent and Saudi Arabia 42 percent of sales">
+    <img src="assets/insight-3.jpg" width="959" height="1198" loading="lazy" alt="Slide: sales split by channel, Distributor 34.7 percent, Retail 34.5 percent, Online 30.8 percent">
+    <img src="assets/insight-4.jpg" width="959" height="1198" loading="lazy" alt="Slide: sales funnel from 697 leads to 72 won, 10 percent become customers">
+  </div>
+
+  <div class="steps">
+    <h3>How I built it</h3>
+    <ol>
+      <li><b>Clean.</b> Removed 53 duplicate orders and 29 blank rows, and standardised inconsistent country names in Power Query.</li>
+      <li><b>Model.</b> Built a date table and relationships between tables.</li>
+      <li><b>Measure.</b> Wrote DAX measures with SUMX, AVERAGEX and DISTINCTCOUNT.</li>
+      <li><b>Design.</b> Put it on one page a manager can read in 30 seconds.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="section-head">
+    <p class="eyebrow">More work</p>
+    <h2>Projects</h2>
+  </div>
+  <div class="filters" role="tablist" aria-label="Filter projects">
+    <button class="chip is-on" data-filter="all" role="tab" aria-selected="true">All</button>
+    <button class="chip" data-filter="analysis" role="tab" aria-selected="false">Analysis</button>
+    <button class="chip" data-filter="data" role="tab" aria-selected="false">Databases</button>
+  </div>
+  <div class="proj-grid">
+    <article class="proj" data-cat="analysis">
+      <h3>Sales Performance Analysis, end to end</h3>
+      <p class="tags"><span>Excel</span><span>SQL</span></p>
+      <p>Owned the analysis from raw sales data to findings on revenue, products and sales trends. Cleaned the data in Excel and wrote SQL queries to aggregate, filter and join it.</p>
+    </article>
+    <article class="proj" data-cat="analysis">
+      <h3>Sales Data Analysis</h3>
+      <p class="tags"><span>Excel</span><span>SQL</span></p>
+      <p>Analysed a second sales dataset to answer business questions about sales performance. Excel for cleaning, formulas and summaries, SQL for querying.</p>
+    </article>
+    <article class="proj" data-cat="analysis">
+      <h3>University Data Analysis Project</h3>
+      <p class="tags"><span>Excel</span><span>SQL</span></p>
+      <p>Coursework project. Prepared and organised the data in Excel, then analysed it with SQL queries.</p>
+    </article>
+    <article class="proj" data-cat="data">
+      <h3>Safwa Bakery: ordering and admin platform</h3>
+      <p class="tags"><span>SQL Server</span><span>Prisma ORM</span></p>
+      <p>Designed the relational schema (Products, Admins). Built a JSON seeding pipeline that loaded a 15-category catalog of 200+ items, and an admin dashboard with full CRUD and hashed credentials.</p>
+    </article>
+    <article class="proj" data-cat="data">
+      <h3>AI Sprint: AI project planning platform</h3>
+      <p class="tags"><span>REST API</span><span>JSON</span><span>Data validation</span></p>
+      <p>Led a team of 5 on a DEPI graduation project that processes AI-generated data from the Google Gemini API, with a strict JSON schema, automatic retry with backoff and a fallback parser so the data is always parseable.</p>
+    </article>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="section-head">
+    <p class="eyebrow">Toolkit</p>
+    <h2>What I work with</h2>
+  </div>
+  <div class="skills">
+    <div class="skill-group"><h3>Analysis and BI</h3><p class="tags big"><span>SQL (SQL Server)</span><span>Excel</span><span>Power BI</span><span>Power Query</span><span>DAX</span><span>Data cleaning</span><span>KPI reporting</span></p></div>
+    <div class="skill-group"><h3>Data foundations</h3><p class="tags big"><span>Schema design</span><span>Joins and aggregations</span><span>JSON pipelines</span><span>REST APIs</span><span>Data validation</span></p></div>
+    <div class="skill-group"><h3>Also</h3><p class="tags big"><span>React</span><span>TypeScript</span><span>Git and GitHub</span><span>Team leadership</span></p></div>
+  </div>
+</section>
+
+<section id="path" class="section">
+  <div class="section-head">
+    <p class="eyebrow">Background</p>
+    <h2>Path so far</h2>
+  </div>
+  <ol class="timeline">
+    <li><time>Jan 2026 – now</time><h3>Freelance developer</h3><p>3+ client projects delivered end to end, including database-backed ordering systems. Handled client communication, timelines and revisions.</p></li>
+    <li><time>Oct 2024 – Jul 2026</time><h3>Front-end trainee, Digital Egypt Pioneers Initiative (DEPI)</h3><p>Government-backed program. Certificate of completion in July 2026. Led the AI Sprint team.</p></li>
+    <li><time>Jul 2026</time><h3>Front-end trainee, Codveda</h3><p>One-month program with 10 practical tasks.</p></li>
+    <li><time>2024 – 2028</time><h3>B.Sc. Computer Science (Software Engineering), Lotus University</h3><p>Expected graduation 2028. Coursework includes data structures, algorithms and object-oriented programming.</p></li>
+    <li><time>Jul – Aug 2024</time><h3>Web development trainee, Information Technology Institute (ITI), Minia</h3><p>60-hour summer program with 98% attendance. Certificate of completion.</p></li>
+  </ol>
+  <p class="small">Languages: Arabic (native), English (intermediate).</p>
+</section>
+
+<section id="contact" class="section contact">
+  <p class="eyebrow">Contact</p>
+  <h2>Open to a data analyst internship</h2>
+  <p class="lead">I can start immediately. Send me a message or take a look at my CV.</p>
+  <div class="cta">
+    <a class="btn" href="mailto:moameneisam1@gmail.com">moameneisam1@gmail.com</a>
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/moamen-essam" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn btn-ghost" href="https://github.com/moamenesam" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><span>© <span id="year">2026</span> Moamen Essam</span><a href="#top">Back to top ↑</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
